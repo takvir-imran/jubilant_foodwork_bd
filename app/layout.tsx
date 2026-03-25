@@ -1,36 +1,39 @@
-import type {Metadata} from "next";
-
+import type { Metadata } from "next";
 import "./globals.css";
-
-import {Open_Sans, Alata} from "next/font/google";
+import Script from "next/script";
+import { Open_Sans, Alata } from "next/font/google";
+import {WelcomeCouponModal} from "@/app/global_component/WelcomeCoupon";
 
 const openSans = Open_Sans({
     subsets: ["latin"],
     weight: ["400", "600", "700"],
-    variable: "--font-open-sans",
-    display: "swap",
 });
- const alata = Alata({
-     subsets: ["latin"],
-     weight: "400",
-     variable: "--font-alata",
- });
+
+const alata = Alata({
+    subsets: ["latin"],
+    weight: "400",
+});
 
 export const metadata: Metadata = {
-  title: "Jubilant Foodworks Bangladesh",
-  description: "This Website is under Developement",
+    title: "Jubilant Foodworks Bangladesh",
+    description: "This Website is under Development",
 };
 
 export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
-  return (
-    <html lang="en">
-      <body className={`${alata.variable} ${openSans.variable} antialiased`}>
-        {children}
-      </body>
-    </html>
-  );
+                                       children,
+                                   }: {
+    children: React.ReactNode;
+}) {
+    return (
+        <html lang="en">
+            <body className="antialiased">
+            <Script
+                src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+                strategy="beforeInteractive"
+            />
+            {children}
+            <WelcomeCouponModal />
+            </body>
+        </html>
+    );
 }

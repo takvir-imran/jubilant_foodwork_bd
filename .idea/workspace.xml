@@ -4,24 +4,99 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="562ed3a4-988f-42d8-a7e0-dc3b36cf24e1" name="Changes" comment="" />
+    <list default="true" id="562ed3a4-988f-42d8-a7e0-dc3b36cf24e1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.dockerignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/brands/dominos/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/fonts.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/global_component/About_Components/About.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/global_component/About_Components/CTABanner.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/global_component/About_Components/StatsCard.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/global_component/About_Components/Timeline.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/global_component/Announcement_component/Anncouncement.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/global_component/Announcement_component/AnnouncementCard.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/global_component/Announcement_component/AnnouncementIcon.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/global_component/Awards/AwardSlider.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/global_component/Awards/Awards.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/global_component/Brands/Brands.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/global_component/Footer_Components/Footer.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/global_component/Footer_Components/FooterColumn.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/global_component/Footer_Components/Newsletter.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/global_component/HeadingTag.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/global_component/Hero.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/global_component/PizzaCard.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/global_component/WelcomeCoupon.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/global_component/page_components/brands/dominos/AboutSection.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/global_component/page_components/brands/dominos/DominosTimeline.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/global_component/page_components/brands/dominos/HeroPizza.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/global_component/page_components/brands/dominos/HeroSection.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/global_component/page_components/brands/dominos/Menushowcase.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/global_component/page_components/brands/dominos/StatSection.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/global_component/page_components/brands/dominos/WhyChooseUsSection.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/AnnouncementData.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/About_image_bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/About_image_fg.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/Award2.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/Beefy-Meetza.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/CPAAward.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/Dominos_pizza_logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/Rectangle 31.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/Slide 1.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/Slide2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/Slide3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/dominos/Beefy-Meetza.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/dominos/Pizza-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/dominos/Pizza-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/dominos/Pizza-4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/dominos/doePrepare.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/dominos/pizzaMaking.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/jubilant-foodworks-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/jubl.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/pizzabg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jubilent-foodworks-bangladesh.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jubilent-foodworks-bangladesh.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/global_component/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/global_component/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="34" />
+    <option name="cachedIndexableFilesCount" value="71" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="TypeScript File" />
+        <option value="Dockerfile" />
         <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;takvir-imran&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:takvir-imran/jubilant_foodwork_bd.git&quot;,
+    &quot;accountId&quot;: &quot;874a4aa6-ebaf-40a6-b5a0-304dc32c59eb&quot;
+  }
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/app/layout.tsx" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="McpProjectServerCommands">
     <commands />
@@ -52,7 +127,8 @@
     &quot;js.debugger.nextJs.config.created.client&quot;: &quot;true&quot;,
     &quot;js.debugger.nextJs.config.created.server&quot;: &quot;true&quot;,
     &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/user/Desktop/Desktop Windows/React/Website/jubilent-foodworks-bangladesh&quot;,
+    &quot;kronk.content.tree.expanded.paths&quot;: &quot;&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/user/Desktop/Desktop Windows/React/Website/jubilent-foodworks-bangladesh/public/assets/dominos&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -71,8 +147,19 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/assets/dominos" />
+      <recent name="$PROJECT_DIR$/public/assets" />
+    </key>
     <key name="es6.move.members.recent.items">
       <recent name="$PROJECT_DIR$/app/geistMono.tsx" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/assets/dominos" />
+      <recent name="$PROJECT_DIR$/app/global_component/Awards" />
+      <recent name="$PROJECT_DIR$/app/global_component/About_Components" />
+      <recent name="$PROJECT_DIR$/public/assets" />
+      <recent name="$PROJECT_DIR$/app/global_component/Announcement_component" />
     </key>
   </component>
   <component name="RunManager" selected="npm.Next.js: server-side">
@@ -111,10 +198,52 @@
       <workItem from="1772603422474" duration="1221000" />
       <workItem from="1772604676524" duration="4511000" />
       <workItem from="1772609747823" duration="3080000" />
+      <workItem from="1772614825749" duration="1697000" />
+      <workItem from="1772946668436" duration="9952000" />
+      <workItem from="1773030663652" duration="8682000" />
+      <workItem from="1773214633583" duration="6830000" />
+      <workItem from="1773247824094" duration="71000" />
+      <workItem from="1773250218526" duration="7745000" />
+      <workItem from="1773260760202" duration="1321000" />
+      <workItem from="1773262155638" duration="265000" />
+      <workItem from="1773293172420" duration="10787000" />
+      <workItem from="1773379250345" duration="5188000" />
+      <workItem from="1773409197317" duration="6308000" />
+      <workItem from="1773430608420" duration="253000" />
+      <workItem from="1773434535005" duration="3854000" />
+      <workItem from="1773480387946" duration="14289000" />
+      <workItem from="1773551919218" duration="4329000" />
+      <workItem from="1773637579366" duration="14447000" />
+      <workItem from="1773748481843" duration="619000" />
+      <workItem from="1773910592846" duration="17575000" />
+      <workItem from="1773932773002" duration="2555000" />
+      <workItem from="1773945073944" duration="7301000" />
+      <workItem from="1774010442153" duration="5744000" />
+      <workItem from="1774019087630" duration="975000" />
+      <workItem from="1774023078564" duration="12948000" />
+      <workItem from="1774086138504" duration="4870000" />
+      <workItem from="1774092641828" duration="2255000" />
+      <workItem from="1774170363461" duration="10968000" />
+      <workItem from="1774184936597" duration="2007000" />
+      <workItem from="1774203615993" duration="13948000" />
+      <workItem from="1774279256639" duration="7875000" />
+      <workItem from="1774330788323" duration="8369000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/app/global_component/page_components/brands/dominos/StatSection.tsx</url>
+          <line>2</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
