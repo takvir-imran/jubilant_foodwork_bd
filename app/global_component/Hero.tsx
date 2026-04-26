@@ -1,6 +1,7 @@
 'use client'
 
 import {useEffect, useRef, useState, CSSProperties} from "react";
+import Image from "next/image";
 import gsap from "gsap";
 
 interface Slide {
@@ -139,7 +140,7 @@ export default function Hero() {
                     className="absolute inset-0"
                     style={{ opacity: i === 0 ? 1 : 0, zIndex: i === 0 ? 2 : 0 } as CSSProperties}
                 >
-                    <img src={slide.src} alt={slide.alt} className="w-full h-full object-cover block" />
+                    <Image src={slide.src} alt={slide.alt} fill className="object-cover" priority={i === 0} />
                 </div>
             ))}
 

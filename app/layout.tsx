@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Script from "next/script";
-import { Open_Sans, Alata } from "next/font/google";
+import { Open_Sans, Alata, Montserrat, DM_Sans, Playfair_Display } from "next/font/google";
 import {WelcomeCouponModal} from "@/app/global_component/WelcomeCoupon";
 
 const openSans = Open_Sans({
@@ -12,6 +11,24 @@ const openSans = Open_Sans({
 const alata = Alata({
     subsets: ["latin"],
     weight: "400",
+});
+
+const montserrat = Montserrat({
+    subsets: ["latin"],
+    weight: ["400", "600", "700", "800", "900"],
+    variable: "--font-montserrat",
+});
+
+const dmSans = DM_Sans({
+    subsets: ["latin"],
+    weight: ["300", "400", "500"],
+    variable: "--font-dm-sans",
+});
+
+const playfair = Playfair_Display({
+    subsets: ["latin"],
+    weight: ["700", "900"],
+    variable: "--font-playfair",
 });
 
 export const metadata: Metadata = {
@@ -26,11 +43,7 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en">
-            <body className="antialiased">
-            <Script
-                src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
-                strategy="beforeInteractive"
-            />
+            <body className={`antialiased ${montserrat.variable} ${dmSans.variable} ${playfair.variable}`}>
             {children}
             <WelcomeCouponModal />
             </body>

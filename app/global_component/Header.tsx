@@ -21,11 +21,10 @@ const navigationItems: NavItem[] = [
         label: 'About Us',
         href: '#',
         dropdownItem: [
-            {label: 'Company Profile', href: '#company-profile'},
-            {label: 'CEO Message', href: '#ceo-message'},
-            {label: 'Leadership', href: '#leadership'},
-            {label: 'Milestones', href: '#milestones'},
-            {label: 'Awards', href: '#awards'},
+            {label: 'Company Profile', href: '/about_us/company-profile'},
+            {label: 'CEO Message', href: '/about_us/ceo-message'},
+            {label: 'Milestones', href: '/about_us/milestones'},
+            {label: 'Awards', href: '/about_us/awards'},
         ]
     },
     {
@@ -80,17 +79,32 @@ export default function Header() {
                             <div key={items.label} className="relative group"
                                  onMouseEnter={() => setActiveDropdown(items.label)}
                                  onMouseLeave={() => setActiveDropdown(null)}>
-                                <button className={`flex items-center gap-1 px-4 py-2 text-gray-700 transition-colors hover:text-[#0056A3] font-medium text-sm`}>
+                                <button
+                                    onClick={() => setActiveDropdown(isActiveDropdown === items.label ? null : items.label)}
+                                    aria-expanded={isActiveDropdown === items.label}
+                                    aria-haspopup={!!items.dropdownItem}
+                                    className={`flex items-center gap-1 px-4 py-2 text-gray-700 transition-colors hover:text-[#0056A3] font-medium text-sm`}
+                                >
                                     {items.label}
+                                    {items.dropdownItem && (
+                                        <ChevronDown size={14} className={`transition-transform ${isActiveDropdown === items.label ? 'rotate-180' : ''}`} />
+                                    )}
                                 </button>
                                 {/*Dropdown*/}
                                 {items.dropdownItem && isActiveDropdown === items.label && (
-                                    <div className="absolute top-full left-0 mt-0 bg-white shadow-md rounded-lg py-2 min-w-[220px] hover:text-[#0056A3] border border-gray-100 animate-fadeIn z-50">
-                                        {items.dropdownItem.map((dropdownItems => (
-                                            <a key={dropdownItems.label} href={dropdownItems.href} className="block px-5 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-[#0056A3] transition-colors">{dropdownItems.label}</a>
-                                            ))
-                                        )
-                                        }
+                                    <div className="absolute top-full left-0 pt-2 min-w-[220px] z-50">
+                                        <div className="bg-white shadow-lg rounded-lg py-2 border border-gray-100 animate-fadeIn">
+                                            {items.dropdownItem.map((dropdownItem) => (
+                                                <Link
+                                                    key={dropdownItem.label}
+                                                    href={dropdownItem.href}
+                                                    onClick={() => setActiveDropdown(null)}
+                                                    className="block px-5 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-[#0056A3] transition-colors"
+                                                >
+                                                    {dropdownItem.label}
+                                                </Link>
+                                            ))}
+                                        </div>
                                     </div>
                                 )}
                             </div>
@@ -101,7 +115,7 @@ export default function Header() {
                             {isSearchOpen ? (
                                 <div className="gap-2 flex items-centre">
                                     <input type="text" placeholder="Search"
-                                    className="px-4 py-1.5 border-2 border-[#0056A3] rounded-full focus: outline-none w-56 text-sm"
+                                    className="px-4 py-1.5 border-2 border-[#0056A3] rounded-full focus:outline-none w-56 text-sm"
                                     autoFocus
                                     />
                                     <button onClick={() => setSearchOpen(false)}
@@ -131,20 +145,27 @@ export default function Header() {
                         <nav className="lg:hidden pb-4 flex flex-col space-y-2 border-t border-gray-200 pt-3">
                             <div className="relative mb-2">
                                 <input type="text" placeholder="Search"
-                                       className="w-full border-2 border-gray-200 rounded-lg px-4 py-2 focus: outline-none focus:border-[#056A3] text-sm"/>
+                                       className="w-full border-2 border-gray-200 rounded-lg px-4 py-2 focus:outline-none focus:border-[#0056A3] text-sm"/>
                                 <Search size={18} className="text-gray-400 absolute right-3 top-2.5" />
                             </div>
                             {navigationItems.map( items => (
                                 <div key={items.label}>
-                                    <button onClick={() => setActiveDropdown(items.label)} className="w-full flex items-center justify-between px-4 py-2.5 text-gray-700 hover:text-[#0056A3] hover:bg-gray-50 transition-colors font-medium text-sm rounded-lg">
+                                    <button onClick={() => setActiveMobileDropdown(activeMobileDropdown === items.label ? null : items.label)} className="w-full flex items-center justify-between px-4 py-2.5 text-gray-700 hover:text-[#0056A3] hover:bg-gray-50 transition-colors font-medium text-sm rounded-lg">
                                         {items.label}
-                                        <ChevronDown size={16} className={`transition-transform ${isActiveDropdown === items.label ? 'rotate-180' : ''}`} />
+                                        <ChevronDown size={16} className={`transition-transform ${activeMobileDropdown === items.label ? 'rotate-180' : ''}`} />
                                     </button>
                                     {/*Mobile Dropdown*/}
-                                    {items.dropdownItem && isActiveDropdown === items.label && (
+                                    {items.dropdownItem && activeMobileDropdown === items.label && (
                                         <div className="pl-6 pr-4 py-2 space-y-1">
                                             {items.dropdownItem.map((dropdownItem) => (
-                                                <Link className="block px-4 py-2 text-sm text-gray-600 hover:text-[#0056A3] hover:bg-blue-50 rounded-lg transition-colors" key={dropdownItem.label} href={dropdownItem.href}>{dropdownItem.label}</Link>
+                                                <Link
+                                                    className="block px-4 py-2 text-sm text-gray-600 hover:text-[#0056A3] hover:bg-blue-50 rounded-lg transition-colors"
+                                                    key={dropdownItem.label}
+                                                    href={dropdownItem.href}
+                                                    onClick={() => { setMenuOpen(false); setActiveMobileDropdown(null); }}
+                                                >
+                                                    {dropdownItem.label}
+                                                </Link>
                                             ))}
                                         </div>
                                     )}

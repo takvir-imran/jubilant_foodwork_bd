@@ -40,6 +40,16 @@ export function WelcomeCouponModal() {
         return () => window.removeEventListener('showCouponModal', handleShow as EventListener);
     }, []);
 
+    // Auto-show after 5 s on first visit
+    useEffect(() => {
+        if (localStorage.getItem('coupon_shown')) return;
+        const id = setTimeout(() => {
+            setIsVisible(true);
+            localStorage.setItem('coupon_shown', '1');
+        }, 5000);
+        return () => clearTimeout(id);
+    }, []);
+
     useEffect(() => {
         if (!isVisible) return;
         const onKey = (e: KeyboardEvent) => { if (e.key === 'Escape') setIsVisible(false); };
@@ -67,10 +77,8 @@ export function WelcomeCouponModal() {
     return (
         <>
             <style>{`
-                @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=DM+Sans:wght@300;400;500&display=swap');
-
-                .dom-root    { font-family: 'DM Sans', sans-serif; }
-                .dom-display { font-family: 'Montserrat', sans-serif; }
+                .dom-root    { font-family: var(--font-dm-sans, 'DM Sans', sans-serif); }
+                .dom-display { font-family: var(--font-montserrat, 'Montserrat', sans-serif); }
 
                 /* Diagonal stripe pattern — classic Domino's box vibe */
                 .dom-stripes {

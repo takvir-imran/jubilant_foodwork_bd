@@ -1,8 +1,6 @@
 'use client'
 import {
-    ExternalLink,
     MapPin,
-    Star,
     ArrowRight,
 } from "lucide-react";
 import Link from "next/link";
@@ -21,7 +19,7 @@ export function Brands() {
             color: "from-[#0056A3] to-[#00B0E6]",
             bgColor: "from-blue-50 to-cyan-50",
             stats: { locations: "40+ Outlets" },
-            link: "/dominos",
+            link: "/brands/dominos",
         },
     ];
 

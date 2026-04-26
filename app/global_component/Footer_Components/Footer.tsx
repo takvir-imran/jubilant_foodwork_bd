@@ -1,7 +1,7 @@
 import Link from "next/link";
 import FooterColumn from "@/app/global_component/Footer_Components/FooterColumn";
 import Image from "next/image";
-import {MapPin, Youtube, Facebook, Instagram, Linkedin, Twitter} from "lucide-react";
+import {MapPin, Youtube, Facebook, Instagram, Linkedin} from "lucide-react";
 import Newsletter from "@/app/global_component/Footer_Components/Newsletter";
 
 
@@ -19,15 +19,11 @@ const aboutUs: NavColumn = {
     columnItems: [
         {
             label: "Company Profile",
-            href: "/about_us/company-profile/",
+            href: "/about_us/company-profile",
         },
         {
-            label: "Ceo Message",
-            href: "/about_us/ceo-message/",
-        },
-        {
-            label: "Leadership",
-            href: "/about_us/leadership",
+            label: "CEO Message",
+            href: "/about_us/ceo-message",
         },
         {
             label: "Milestones",
@@ -105,7 +101,7 @@ export function Footer(){
                 </div>
 
                 <div className="border-t  border-gray-200 pt-6">
-                    <div className="flex flex-col lg:flex-row justify-between lg:flex-col items-start lg:items-end gap-4">
+                    <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end gap-4">
                         <div className="flex-1">
                             <Image className="mb-2" src="/assets/jubl.png" alt="Jubl Logo" width={48} height={48} />
                             <div className="flex items-start gap-2 text-sm  text-gray-600">

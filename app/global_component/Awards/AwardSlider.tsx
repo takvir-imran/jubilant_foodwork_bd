@@ -174,10 +174,8 @@ export default function AwardsSlider() {
     return (
         <>
             <style>{`
-                @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap');
-
-                .asl-root    { font-family: 'DM Sans', sans-serif; }
-                .asl-display { font-family: 'Playfair Display', Georgia, serif; }
+                .asl-root    { font-family: var(--font-dm-sans, 'DM Sans', sans-serif); }
+                .asl-display { font-family: var(--font-playfair, 'Playfair Display', Georgia, serif); }
 
                 @keyframes asl-right {
                     from { opacity:0; transform:translateX(64px) scale(0.98); }
